@@ -111,6 +111,9 @@ public class Company {
             System.out.println("Error loading file.");
         }
     }
+
+
+    //You start explaining from here
     
     public void addEmployee(Scanner scanner) {
         try {

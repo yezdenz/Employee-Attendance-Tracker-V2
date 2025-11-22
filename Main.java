@@ -1,3 +1,5 @@
+package labfinal;
+
 import java.util.Scanner;
 
 public class Main {

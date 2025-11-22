@@ -60,14 +60,14 @@ public class Company {
 
     public void loadFromFile() {
         try (FileReader reader = new FileReader(fileName);
-             Scanner sc = new Scanner(reader)) {
+             Scanner scanner = new Scanner(reader)) {
 
             employees.clear();
             empMap.clear();
             Employee emp = null;
 
-            while (sc.hasNextLine()) {
-                String line = sc.nextLine().trim();
+            while (scanner.hasNextLine()) {
+                String line = scanner.nextLine().trim();
                 if (line.isEmpty()) continue;
 
                 if (line.startsWith("Employee ID:")) {
